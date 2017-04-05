@@ -1,0 +1,3 @@
+@Imports DemoWebApiHost.Areas.HelpPage.ModelDescriptions
+@ModelType SimpleTypeModelDescription
+@Model.Documentation
