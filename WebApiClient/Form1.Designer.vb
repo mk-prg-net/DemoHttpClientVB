@@ -30,6 +30,8 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.tbxPort = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnSendValue = New System.Windows.Forms.Button()
+        Me.btnSendSimpleWithPost = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'tbxNachricht
@@ -38,6 +40,7 @@ Partial Class Form1
         Me.tbxNachricht.Name = "tbxNachricht"
         Me.tbxNachricht.Size = New System.Drawing.Size(269, 20)
         Me.tbxNachricht.TabIndex = 0
+        Me.tbxNachricht.Text = "Hallo, eine Nachricht von mir..."
         '
         'Label1
         '
@@ -52,7 +55,7 @@ Partial Class Form1
         '
         Me.btnSenden.Location = New System.Drawing.Point(304, 94)
         Me.btnSenden.Name = "btnSenden"
-        Me.btnSenden.Size = New System.Drawing.Size(91, 23)
+        Me.btnSenden.Size = New System.Drawing.Size(147, 23)
         Me.btnSenden.TabIndex = 2
         Me.btnSenden.Text = "senden (get)"
         Me.btnSenden.UseVisualStyleBackColor = True
@@ -68,12 +71,13 @@ Partial Class Form1
         '
         'btnSendWithPost
         '
+        Me.btnSendWithPost.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.btnSendWithPost.Location = New System.Drawing.Point(304, 124)
         Me.btnSendWithPost.Name = "btnSendWithPost"
-        Me.btnSendWithPost.Size = New System.Drawing.Size(91, 23)
+        Me.btnSendWithPost.Size = New System.Drawing.Size(147, 23)
         Me.btnSendWithPost.TabIndex = 4
         Me.btnSendWithPost.Text = "senden (post)"
-        Me.btnSendWithPost.UseVisualStyleBackColor = True
+        Me.btnSendWithPost.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -90,7 +94,7 @@ Partial Class Form1
         Me.tbxPort.Name = "tbxPort"
         Me.tbxPort.Size = New System.Drawing.Size(100, 20)
         Me.tbxPort.TabIndex = 6
-        Me.tbxPort.Text = "6000"
+        Me.tbxPort.Text = "7000"
         '
         'Label3
         '
@@ -101,11 +105,31 @@ Partial Class Form1
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Response"
         '
+        'btnSendValue
+        '
+        Me.btnSendValue.Location = New System.Drawing.Point(304, 197)
+        Me.btnSendValue.Name = "btnSendValue"
+        Me.btnSendValue.Size = New System.Drawing.Size(147, 23)
+        Me.btnSendValue.TabIndex = 8
+        Me.btnSendValue.Text = "Wert senden (post)"
+        Me.btnSendValue.UseVisualStyleBackColor = True
+        '
+        'btnSendSimpleWithPost
+        '
+        Me.btnSendSimpleWithPost.Location = New System.Drawing.Point(304, 160)
+        Me.btnSendSimpleWithPost.Name = "btnSendSimpleWithPost"
+        Me.btnSendSimpleWithPost.Size = New System.Drawing.Size(147, 23)
+        Me.btnSendSimpleWithPost.TabIndex = 9
+        Me.btnSendSimpleWithPost.Text = "senden simple (post)"
+        Me.btnSendSimpleWithPost.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(447, 262)
+        Me.ClientSize = New System.Drawing.Size(469, 262)
+        Me.Controls.Add(Me.btnSendSimpleWithPost)
+        Me.Controls.Add(Me.btnSendValue)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.tbxPort)
         Me.Controls.Add(Me.Label2)
@@ -115,7 +139,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.tbxNachricht)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Demo HTTP Client + WebAPI (c) Martin Korneffel 2017"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -128,4 +152,6 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents tbxPort As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnSendValue As Button
+    Friend WithEvents btnSendSimpleWithPost As Button
 End Class

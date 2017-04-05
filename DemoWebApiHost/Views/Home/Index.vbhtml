@@ -1,25 +1,23 @@
-﻿@ModelType List(Of DemoWebApiHost.Telegram)
+﻿@ModelType DemoWebApiHost.Telegram()
 <div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
     <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 <div class="row">
-    <table class="table table-striped">
-        <tr>
-            <th>Zeit</th>
-            <th>ID</th>
-            <th>Msg</th>
-        </tr>
-        @For Each tel In Model
 
-            @<tr>
-                <td>@tel.Posted.ToLongTimeString()</td>
-                <td>@tel.ID.ToString()</td>
-                <td>@tel.Msg</td>
-            </tr>
-        Next
-    </table>
+
+    <button id="btnJsTestPost" class="btn btn-primary">WebApi mit JQuery aus Browser aufrufen</button>
+
+    <h3>Log Tabelle der WebApi Aufrufe</h3>
+    <p>
+        Hier werden die einzelnen Aufrufe von WebApi- Actions protokolliert. Das Protokoll befindet sich im Anwendungszustand 
+        der Webanwendung (Application). Es wird mittels JavaScript/Ajax periodisch aktualisiert
+    </p>
+    <div id="LogTab">
+
+    </div>
+    
 </div>
 
 <div Class="row">
@@ -43,3 +41,10 @@
         <p> <a Class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
 </div>
+
+
+@Section scripts
+    <script src="~/Scripts/Home/Index/DocumentReady.js"></script>
+End Section
+
+

@@ -15,9 +15,25 @@ Public Class ValuesController
     End Function
 
     ' POST api/values
-    Public Sub PostValue(<FromBody()> ByVal value As String)
+    Public Function PostValue(<FromBody()> ByVal value As String) As Date
+        Try
+            ' Um den Anwendungszustand konurrieren die User- Zugriff muss serialisiert werden
+            HttpContext.Current.Application.Lock()
 
-    End Sub
+            If HttpContext.Current.Application("Log") Is Nothing Then
+                HttpContext.Current.Application("Log") = New List(Of Telegram)
+            End If
+
+            Dim Log As List(Of Telegram) = CType(HttpContext.Current.Application("Log"), List(Of Telegram))
+            Log.Add(New Telegram() With {.ID = Guid.NewGuid, .Posted = Now, .Msg = value})
+
+        Finally
+            HttpContext.Current.Application.UnLock()
+        End Try
+
+        Return Now
+
+    End Function
 
     ' PUT api/values/5
     Public Sub PutValue(ByVal id As Integer, <FromBody()> ByVal value As String)

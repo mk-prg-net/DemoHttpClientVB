@@ -5,6 +5,9 @@ Public Class WebApiApplication
     Inherits System.Web.HttpApplication
 
     Sub Application_Start()
+
+        GlobalConfiguration.Configuration.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always
+
         AreaRegistration.RegisterAllAreas()
         GlobalConfiguration.Configure(AddressOf WebApiConfig.Register)
         FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters)

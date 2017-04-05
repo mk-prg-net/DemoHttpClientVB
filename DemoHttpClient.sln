@@ -3,13 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OpenXml25ExcelDemo.Client.WinForm", "OpenXml25ExcelDemo.Client.WinForm\OpenXml25ExcelDemo.Client.WinForm.vbproj", "{E2B2B014-4D75-4DE4-9D92-2F2C19C6B093}"
-EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WebApiClient", "WebApiClient\WebApiClient.vbproj", "{54BBB3A4-E851-43FC-9CE8-DE041EF5D06C}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OpenXml25ExcelDemo", "OpenXml25ExcelDemo\OpenXml25ExcelDemo.vbproj", "{C5D7DBE3-C6C7-42B9-822A-366F09BF0139}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OpenXml25ExcelDemo.Test", "OpenXml25ExcelDemo.Test\OpenXml25ExcelDemo.Test.vbproj", "{901BB0F9-6BE5-4251-9E6B-3A29063EED3C}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DemoWebApiHost", "DemoWebApiHost\DemoWebApiHost.vbproj", "{8F9F2484-91EB-46CF-A936-F65985538200}"
 EndProject
@@ -19,22 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E2B2B014-4D75-4DE4-9D92-2F2C19C6B093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E2B2B014-4D75-4DE4-9D92-2F2C19C6B093}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E2B2B014-4D75-4DE4-9D92-2F2C19C6B093}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E2B2B014-4D75-4DE4-9D92-2F2C19C6B093}.Release|Any CPU.Build.0 = Release|Any CPU
 		{54BBB3A4-E851-43FC-9CE8-DE041EF5D06C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54BBB3A4-E851-43FC-9CE8-DE041EF5D06C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54BBB3A4-E851-43FC-9CE8-DE041EF5D06C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54BBB3A4-E851-43FC-9CE8-DE041EF5D06C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5D7DBE3-C6C7-42B9-822A-366F09BF0139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5D7DBE3-C6C7-42B9-822A-366F09BF0139}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5D7DBE3-C6C7-42B9-822A-366F09BF0139}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5D7DBE3-C6C7-42B9-822A-366F09BF0139}.Release|Any CPU.Build.0 = Release|Any CPU
-		{901BB0F9-6BE5-4251-9E6B-3A29063EED3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{901BB0F9-6BE5-4251-9E6B-3A29063EED3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{901BB0F9-6BE5-4251-9E6B-3A29063EED3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{901BB0F9-6BE5-4251-9E6B-3A29063EED3C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8F9F2484-91EB-46CF-A936-F65985538200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8F9F2484-91EB-46CF-A936-F65985538200}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F9F2484-91EB-46CF-A936-F65985538200}.Release|Any CPU.ActiveCfg = Release|Any CPU
